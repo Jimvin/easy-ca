@@ -27,6 +27,7 @@ fi
 BIN_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 source ${BIN_DIR}/functions
 source ${BIN_DIR}/defaults.conf
+CA_SAN="DNS.1:$CA_DOMAIN"
 
 HOME=$CA_DIR
 PARENT=${BIN_DIR}/..
